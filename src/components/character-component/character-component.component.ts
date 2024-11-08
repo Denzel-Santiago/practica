@@ -40,6 +40,8 @@ export class CharacterComponentComponent implements OnInit {
     }
     return 'No disponible';
   }
-
+  showCharacterDescription(character: ICharacter): void {
+    alert(`Descripción de ${character.name}: ${character.description || 'No disponible'}`);
+  }
   
 }

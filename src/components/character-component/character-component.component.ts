@@ -41,10 +41,5 @@ export class CharacterComponentComponent implements OnInit {
     return 'No disponible';
   }
 
-  @Input() character!: ICharacter;
-  @Output() characterClicked = new EventEmitter<number>();
-
-  onClick() {
-    this.characterClicked.emit(this.character.id);
-  }
+  
 }
